@@ -33,6 +33,4 @@ We encourage contributions from the community! Whether you're fixing bugs, addin
 
 Thank you for supporting SDM and open-source software!
 
----
-
-Please note that this is a template for a README file for a GitHub project. It is important to customize it to fit the specifics of your project and to provide all the necessary instructions and information for users and contributors.
+--
