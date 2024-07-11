@@ -15,15 +15,16 @@ To get started with SDM, please follow the instructions below:
 
 ## Commands
 Usage of C:\Users\Hossein\Documents\GitHub\simple-downloader\sdm.exe:
-  -H string
-        Specify the custom header you want sent when downloading. Example: x-authorization-header=abcd;x-test-header=foo
-  -c int
+
+- -H string: 
+    Specify the custom header you want sent when downloading. Example: x-authorization-header=abcd;x-test-header=foo
+- -c int:
         Number of connections to download (default 10)
-  -o string
+- -o string:
         Specify the file name of downloaded file. If not specified the program try to get filename from content-disposition header.
-  -r int
+-   -r int:
         Specify the number of times to retry downloading if error is encountered. (default 10)
-  -u string
+- -u string:
         Specify the target URL for downloading file.
 
 ## Contributing
