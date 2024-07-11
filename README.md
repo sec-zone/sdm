@@ -9,9 +9,22 @@ Welcome to the Simple Download Manager (SDM) project! This command-line tool is 
 
 To get started with SDM, please follow the instructions below:
 
-1. Ensure you have Go installed on your system.
+1. Ensure you have Go(version 1.18 and upper) installed on your system.
 2. Clone the repository to your local machine.
-3. Navigate to the cloned directory and build the project using `go build`.
+3. Navigate to the cloned directory and build the project using `go build -ldflags="-w -s -buildid=" -trimpath -o sdm.exe`.
+
+## Commands
+Usage of C:\Users\Hossein\Documents\GitHub\simple-downloader\sdm.exe:
+  -H string
+        Specify the custom header you want sent when downloading. Example: x-authorization-header=abcd;x-test-header=foo
+  -c int
+        Number of connections to download (default 10)
+  -o string
+        Specify the file name of downloaded file. If not specified the program try to get filename from content-disposition header.
+  -r int
+        Specify the number of times to retry downloading if error is encountered. (default 10)
+  -u string
+        Specify the target URL for downloading file.
 
 ## Contributing
 
