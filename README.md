@@ -13,8 +13,8 @@ To get started with SDM, please follow the instructions below:
 2. Clone the repository to your local machine.
 3. Navigate to the cloned directory and build the project using `go build -ldflags="-w -s -buildid=" -trimpath -o sdm.exe`.
 
-## Commands
-Usage of C:\Users\Hossein\Documents\GitHub\simple-downloader\sdm.exe:
+## Usage
+Usage of sdm.exe:
 
 - -H string: 
     Specify the custom header you want sent when downloading. Example: x-authorization-header=abcd;x-test-header=foo
