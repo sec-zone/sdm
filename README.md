@@ -1,67 +1,34 @@
-# SDM (Software Development Manager)
+# Simple Download Manager (SDM)
 
-SDM is a Go-based tool designed to streamline software development processes. It helps development teams improve their workflow, manage projects effectively, and enhance productivity.
+Welcome to the Simple Download Manager (SDM) project! This command-line tool is built with Go and leverages the TUI library to provide a user-friendly interface for managing downloads. SDM is designed to be lightweight, efficient, and easy to use, with key features including:
 
-## Installation Instructions
+- **Pause/Resume**: Gain control over your downloads and manage your bandwidth effectively.
+- **Multi-Connection Download**: Accelerate your downloads by splitting files into multiple parts and downloading them concurrently.
 
-To install SDM, follow these steps:
+## Getting Started
 
-1. Make sure you have Go installed on your machine. You can download it from [the official Go website](https://golang.org/dl/).
-   
-   ```bash
-   go version  # Verify Go installation
-   ```
+To get started with SDM, please follow the instructions below:
 
-2. Clone the SDM repository:
-   
-   ```bash
-   git clone https://github.com/sec-zone/sdm.git
-   cd sdm
-   ```
+1. Ensure you have Go(version 1.18 and upper) installed on your system.
+2. Clone the repository to your local machine.
+3. Navigate to the cloned directory and build the project using `go build -ldflags="-w -s -buildid=" -trimpath -o sdm.exe`.
 
-3. Build the project:
-   
-   ```bash
-   go build
-   ```
+## Usage
+Usage of sdm.exe:
 
-4. Run the SDM tool:
-   
-   ```bash
-   ./sdm
-   ```
-
-## Usage Examples
-
-Here are some usage examples of the SDM tool:
-
-### Example 1: Initialize a New Project
-```go
-package main
-
-import "github.com/sec-zone/sdm"
-
-func main() {
-    sdm.Init("my-project")
-}
-```
-
-### Example 2: Build and Deploy
-```go
-package main
-
-import "github.com/sec-zone/sdm"
-
-func main() {
-    sdm.Build("my-project")
-    sdm.Deploy("my-project")
-}
-```
+- -H string: 
+    Specify the custom header you want sent when downloading. Example: x-authorization-header=abcd;x-test-header=foo
+- -c int:
+        Number of connections to download (default 10)
+- -o string:
+        Specify the file name of downloaded file. If not specified the program try to get filename from content-disposition header.
+-   -r int:
+        Specify the number of times to retry downloading if error is encountered. (default 10)
+- -u string:
+        Specify the target URL for downloading file.
 
 ## Contributing
 
-We welcome contributions! If you want to contribute to SDM, please fork the repository and submit a pull request. Ensure that you follow the coding standards and include tests for any new features.
+We encourage contributions from the community! Whether you're fixing bugs, adding new features, or improving documentation, your help is welcome. Please read through our contributing guidelines before submitting your pull request.
 
-## License
-
-SDM is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+Thank you for supporting SDM and open-source software!
