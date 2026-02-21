@@ -1,56 +1,67 @@
 # SDM (Software Development Manager)
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
+SDM is a Go-based tool designed to streamline software development processes. It helps development teams improve their workflow, manage projects effectively, and enhance productivity.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Installation Instructions
 
-## Introduction
-SDM is a powerful tool designed to streamline software development processes. With features that enhance productivity and collaboration, SDM is suitable for teams of all sizes.
-
-## Installation
 To install SDM, follow these steps:
 
-1. Clone the repository:
+1. Make sure you have Go installed on your machine. You can download it from [the official Go website](https://golang.org/dl/).
+   
+   ```bash
+   go version  # Verify Go installation
+   ```
+
+2. Clone the SDM repository:
+   
    ```bash
    git clone https://github.com/sec-zone/sdm.git
-   ```
-2. Navigate to the project directory:
-   ```bash
    cd sdm
    ```
-3. Install dependencies:
+
+3. Build the project:
+   
    ```bash
-   npm install
+   go build
    ```
 
-## Usage
-Here are some examples of how to use SDM in your projects:
+4. Run the SDM tool:
+   
+   ```bash
+   ./sdm
+   ```
 
-### Basic Example
-```javascript
-const sdm = require('sdm');
+## Usage Examples
 
-// Example code demonstrating basic functionality
-sdm.doSomethingAwesome();
+Here are some usage examples of the SDM tool:
+
+### Example 1: Initialize a New Project
+```go
+package main
+
+import "github.com/sec-zone/sdm"
+
+func main() {
+    sdm.Init("my-project")
+}
 ```
 
-### Advanced Usage
-```javascript
-sdm.configure({
-  setting1: true,
-  setting2: 'value'
-});
-sdm.start();
+### Example 2: Build and Deploy
+```go
+package main
+
+import "github.com/sec-zone/sdm"
+
+func main() {
+    sdm.Build("my-project")
+    sdm.Deploy("my-project")
+}
 ```
 
 ## Contributing
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+We welcome contributions! If you want to contribute to SDM, please fork the repository and submit a pull request. Ensure that you follow the coding standards and include tests for any new features.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+SDM is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
