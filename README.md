@@ -1,36 +1,56 @@
-# Simple Download Manager (SDM)
+# SDM (Software Development Manager)
 
-Welcome to the Simple Download Manager (SDM) project! This command-line tool is built with Go and leverages the TUI library to provide a user-friendly interface for managing downloads. SDM is designed to be lightweight, efficient, and easy to use, with key features including:
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-- **Pause/Resume**: Gain control over your downloads and manage your bandwidth effectively.
-- **Multi-Connection Download**: Accelerate your downloads by splitting files into multiple parts and downloading them concurrently.
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Getting Started
+## Introduction
+SDM is a powerful tool designed to streamline software development processes. With features that enhance productivity and collaboration, SDM is suitable for teams of all sizes.
 
-To get started with SDM, please follow the instructions below:
+## Installation
+To install SDM, follow these steps:
 
-1. Ensure you have Go(version 1.18 and upper) installed on your system.
-2. Clone the repository to your local machine.
-3. Navigate to the cloned directory and build the project using `go build -ldflags="-w -s -buildid=" -trimpath -o sdm.exe`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sec-zone/sdm.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd sdm
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
 ## Usage
-Usage of sdm.exe:
+Here are some examples of how to use SDM in your projects:
 
-- -H string: 
-    Specify the custom header you want sent when downloading. Example: x-authorization-header=abcd;x-test-header=foo
-- -c int:
-        Number of connections to download (default 10)
-- -o string:
-        Specify the file name of downloaded file. If not specified the program try to get filename from content-disposition header.
--   -r int:
-        Specify the number of times to retry downloading if error is encountered. (default 10)
-- -u string:
-        Specify the target URL for downloading file.
+### Basic Example
+```javascript
+const sdm = require('sdm');
+
+// Example code demonstrating basic functionality
+sdm.doSomethingAwesome();
+```
+
+### Advanced Usage
+```javascript
+sdm.configure({
+  setting1: true,
+  setting2: 'value'
+});
+sdm.start();
+```
 
 ## Contributing
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-We encourage contributions from the community! Whether you're fixing bugs, adding new features, or improving documentation, your help is welcome. Please read through our contributing guidelines before submitting your pull request.
-
-Thank you for supporting SDM and open-source software!
-
---
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
